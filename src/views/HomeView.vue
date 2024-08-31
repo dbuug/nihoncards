@@ -1,9 +1,8 @@
-<script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+<script setup>
+import SideBar from '@/components/SideBar.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <SideBar />
+  <div>center</div>
 </template>
