@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar-items">
+  <div class="sidebar-items" @click="$emit('updateSection', props.toEmit)">
     <div>
       <p v-if="props.icon">
         <span class="sidebar-item-size" :class="props.icon" />
@@ -10,10 +10,11 @@
     </div>
     <p>{{ props.text }}</p>
     <Badge v-if="props.badge" :value="props.badge" />
+    {{ props.toEmit }}
   </div>
 </template>
 <script setup>
-const props = defineProps(['icon', 'character', 'text', 'badge'])
+const props = defineProps(['icon', 'character', 'text', 'badge', 'toEmit'])
 </script>
 <style scoped>
 .sidebar-items {

@@ -14,6 +14,8 @@
           :character="item.character"
           :text="item.text"
           :badge="item.badge"
+          :toEmit="item.toEmit"
+          @update-section="(s) => $emit('updateSection', s)"
         />
       </template>
     </Menu>
@@ -38,15 +40,18 @@ const items = ref([
       },
       {
         text: 'Hiragana',
-        character: 'あ'
+        character: 'あ',
+        toEmit: 'hiragana'
       },
       {
         text: 'Katakana',
-        character: 'ァ'
+        character: 'ァ',
+        toEmit: 'katakana'
       },
       {
         text: 'Kanji N5',
-        character: '日'
+        character: '日',
+        toEmit: 'n5'
       },
       {
         text: 'Exportar',

@@ -8,7 +8,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Badge: typeof import('primevue/badge')['default']
-    CardComponent: typeof import('./src/components/CardComponent.vue')['default']
+    Button: typeof import('primevue/button')['default']
+    CardComponent: typeof import('./src/components/Card/CardComponent.vue')['default']
     Menu: typeof import('primevue/menu')['default']
     OverlayBadge: typeof import('primevue/overlaybadge')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
