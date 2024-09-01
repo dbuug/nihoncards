@@ -12,8 +12,19 @@ interface kanjis {
     kanji: string
     hiragana: string
     romaji: string
-    traducao: string
+    translation: string
 }
+
+interface kanas {
+    letter: string
+    hiragana?: string
+    romaji?: string
+    translation: string
+    seenTimes: number
+    lastChoice: string
+    nextDate: number
+}
+
 export type InitialSetup = {
     hiragana: lettersJson[]
     katakana: lettersJson[]
@@ -25,6 +36,45 @@ export const initialUserSetup = defineStore('initialUserSetup', {
         katakana: [],
         n5kanjis: []
     } as InitialSetup),
+
+    actions: {
+        setLocalStorageConfig: (state: InitialSetup) => {
+            const currentDate = new Date()
+            const hiragana: kanas[] = state.hiragana.map((character: lettersJson) => {
+                return {
+                    letter: character.letter,
+                    translation: character.translation,
+                    seenTimes: 0,
+                    lastChoice: '',
+                    nextDate: currentDate.getTime()
+                }
+            })
+            const katakana: kanas[] = state.katakana.map((character: lettersJson) => {
+                return {
+                    letter: character.letter,
+                    translation: character.translation,
+                    seenTimes: 0,
+                    lastChoice: '',
+                    nextDate: currentDate.getTime()
+                }
+            })
+            const n5: kanas[] = state.n5kanjis.map((character: kanjis) => {
+                return {
+                    letter: character.kanji,
+                    hiragana: character.hiragana,
+                    romaji: character.romaji,
+                    translation: character.translation,
+                    seenTimes: 0,
+                    lastChoice: '',
+                    nextDate: currentDate.getTime()
+                }
+            })
+            localStorage.setItem('hiragana', JSON.stringify(hiragana))
+            localStorage.setItem('katakana', JSON.stringify(katakana))
+            localStorage.setItem('n5', JSON.stringify(n5))
+            console.log('New kanas readed in localstorage')
+        }
+    },
 
     getters: {
         getLetters: (state) => {

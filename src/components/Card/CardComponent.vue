@@ -1,3 +1,6 @@
+<script setup>
+const props = defineProps(['kana'])
+</script>
 <template>
-  <p>card</p>
+  <p>{{ props.kana }}</p>
 </template>

@@ -1,8 +1,10 @@
 <script setup>
-import { initialUserSetup } from '@/stores/LocalStorageDealer/InitialUserSetup'
-const props = defineProps(['praticeMode', 'praticeSection'])
+import { localStorageConfig } from '@/stores/LocalStorageDealer/UserConfig'
 
-const store = initialUserSetup()
+const user = localStorageConfig()
+user.getLocalStorageConfig
+
+const props = defineProps(['praticeMode', 'praticeSection'])
 </script>
 
 <template>
@@ -10,10 +12,7 @@ const store = initialUserSetup()
     <Button @click="$emit('updatePratice', true)" label="Update pratice" />
     {{ props.praticeMode }}
     {{ props.praticeSection }}
-    {{ store.getLetters }}
-    {{ store.hiragana.length }}
-    {{ store.katakana.length }}
-    {{ store.n5kanjis.length }}
+    {{ user.getHiraganaToPratice }}
   </div>
 </template>
 
