@@ -1,6 +1,6 @@
 <template>
   <div class="card flex justify-center">
-    <Menu :model="items" class="w-full md:w-60" style="height: 100%" dt="menu.color">
+    <Menu :model="items" class="w-full md:w-60" style="height: 100%">
       <template #start>
         <SidebarHeader title="NIHONGO CARDS" subtitle="日本語カード" />
       </template>
