@@ -16,3 +16,5 @@ const store = initialUserSetup()
     {{ store.n5kanjis.length }}
   </div>
 </template>
+
+<style scoped></style>
