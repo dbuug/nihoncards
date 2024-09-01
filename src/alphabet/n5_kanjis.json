@@ -1,0 +1,488 @@
+[
+  {
+    "kanji": "一",
+    "hiragana": "いち",
+    "romaji": "ichi",
+    "traducao": "um"
+  },
+  {
+    "kanji": "二",
+    "hiragana": "に",
+    "romaji": "ni",
+    "traducao": "dois"
+  },
+  {
+    "kanji": "三",
+    "hiragana": "さん",
+    "romaji": "san",
+    "traducao": "três"
+  },
+  {
+    "kanji": "四",
+    "hiragana": "し",
+    "romaji": "shi",
+    "traducao": "quatro"
+  },
+  {
+    "kanji": "五",
+    "hiragana": "ご",
+    "romaji": "go",
+    "traducao": "cinco"
+  },
+  {
+    "kanji": "六",
+    "hiragana": "ろく",
+    "romaji": "roku",
+    "traducao": "seis"
+  },
+  {
+    "kanji": "七",
+    "hiragana": "しち",
+    "romaji": "shichi",
+    "traducao": "sete"
+  },
+  {
+    "kanji": "八",
+    "hiragana": "はち",
+    "romaji": "hachi",
+    "traducao": "oito"
+  },
+  {
+    "kanji": "九",
+    "hiragana": "きゅう",
+    "romaji": "kyuu",
+    "traducao": "nove"
+  },
+  {
+    "kanji": "十",
+    "hiragana": "じゅう",
+    "romaji": "juu",
+    "traducao": "dez"
+  },
+  {
+    "kanji": "百",
+    "hiragana": "ひゃく",
+    "romaji": "hyaku",
+    "traducao": "cem"
+  },
+  {
+    "kanji": "千",
+    "hiragana": "せん",
+    "romaji": "sen",
+    "traducao": "mil"
+  },
+  {
+    "kanji": "万",
+    "hiragana": "まん",
+    "romaji": "man",
+    "traducao": "dez mil"
+  },
+  {
+    "kanji": "上",
+    "hiragana": "うえ",
+    "romaji": "ue",
+    "traducao": "cima"
+  },
+  {
+    "kanji": "下",
+    "hiragana": "した",
+    "romaji": "shita",
+    "traducao": "baixo"
+  },
+  {
+    "kanji": "左",
+    "hiragana": "ひだり",
+    "romaji": "hidari",
+    "traducao": "esquerda"
+  },
+  {
+    "kanji": "右",
+    "hiragana": "みぎ",
+    "romaji": "migi",
+    "traducao": "direita"
+  },
+  {
+    "kanji": "中",
+    "hiragana": "なか",
+    "romaji": "naka",
+    "traducao": "dentro"
+  },
+  {
+    "kanji": "大",
+    "hiragana": "おお",
+    "romaji": "oo",
+    "traducao": "grande"
+  },
+  {
+    "kanji": "小",
+    "hiragana": "ちいさい",
+    "romaji": "chiisai",
+    "traducao": "pequeno"
+  },
+  {
+    "kanji": "月",
+    "hiragana": "つき",
+    "romaji": "tsuki",
+    "traducao": "mês, lua"
+  },
+  {
+    "kanji": "日",
+    "hiragana": "ひ",
+    "romaji": "hi",
+    "traducao": "dia, sol"
+  },
+  {
+    "kanji": "年",
+    "hiragana": "とし",
+    "romaji": "toshi",
+    "traducao": "ano"
+  },
+  {
+    "kanji": "早",
+    "hiragana": "はやい",
+    "romaji": "hayai",
+    "traducao": "cedo"
+  },
+  {
+    "kanji": "木",
+    "hiragana": "き",
+    "romaji": "ki",
+    "traducao": "árvore"
+  },
+  {
+    "kanji": "林",
+    "hiragana": "はやし",
+    "romaji": "hayashi",
+    "traducao": "bosque"
+  },
+  {
+    "kanji": "山",
+    "hiragana": "やま",
+    "romaji": "yama",
+    "traducao": "montanha"
+  },
+  {
+    "kanji": "川",
+    "hiragana": "かわ",
+    "romaji": "kawa",
+    "traducao": "rio"
+  },
+  {
+    "kanji": "土",
+    "hiragana": "つち",
+    "romaji": "tsuchi",
+    "traducao": "terra, solo"
+  },
+  {
+    "kanji": "空",
+    "hiragana": "そら",
+    "romaji": "sora",
+    "traducao": "céu, vago"
+  },
+  {
+    "kanji": "田",
+    "hiragana": "た",
+    "romaji": "ta",
+    "traducao": "arrozal"
+  },
+  {
+    "kanji": "天",
+    "hiragana": "てん",
+    "romaji": "ten",
+    "traducao": "céu, paraíso"
+  },
+  {
+    "kanji": "生",
+    "hiragana": "いきる",
+    "romaji": "ikiru",
+    "traducao": "vida, nascer"
+  },
+  {
+    "kanji": "花",
+    "hiragana": "はな",
+    "romaji": "hana",
+    "traducao": "flor"
+  },
+  {
+    "kanji": "草",
+    "hiragana": "くさ",
+    "romaji": "kusa",
+    "traducao": "grama"
+  },
+  {
+    "kanji": "虫",
+    "hiragana": "むし",
+    "romaji": "mushi",
+    "traducao": "inseto"
+  },
+  {
+    "kanji": "犬",
+    "hiragana": "いぬ",
+    "romaji": "inu",
+    "traducao": "cachorro"
+  },
+  {
+    "kanji": "人",
+    "hiragana": "ひと",
+    "romaji": "hito",
+    "traducao": "pessoa"
+  },
+  {
+    "kanji": "名",
+    "hiragana": "な",
+    "romaji": "na",
+    "traducao": "nome"
+  },
+  {
+    "kanji": "女",
+    "hiragana": "おんな",
+    "romaji": "onna",
+    "traducao": "mulher"
+  },
+  {
+    "kanji": "男",
+    "hiragana": "おとこ",
+    "romaji": "otoko",
+    "traducao": "homem"
+  },
+  {
+    "kanji": "子",
+    "hiragana": "こ",
+    "romaji": "ko",
+    "traducao": "criança"
+  },
+  {
+    "kanji": "目",
+    "hiragana": "め",
+    "romaji": "me",
+    "traducao": "olho"
+  },
+  {
+    "kanji": "耳",
+    "hiragana": "みみ",
+    "romaji": "mimi",
+    "traducao": "orelha"
+  },
+  {
+    "kanji": "口",
+    "hiragana": "くち",
+    "romaji": "kuchi",
+    "traducao": "boca"
+  },
+  {
+    "kanji": "手",
+    "hiragana": "て",
+    "romaji": "te",
+    "traducao": "mão"
+  },
+  {
+    "kanji": "足",
+    "hiragana": "あし",
+    "romaji": "ashi",
+    "traducao": "pé, perna"
+  },
+  {
+    "kanji": "見",
+    "hiragana": "み",
+    "romaji": "mi",
+    "traducao": "ver"
+  },
+  {
+    "kanji": "音",
+    "hiragana": "おと",
+    "romaji": "oto",
+    "traducao": "som"
+  },
+  {
+    "kanji": "力",
+    "hiragana": "ちから",
+    "romaji": "chikara",
+    "traducao": "força"
+  },
+  {
+    "kanji": "気",
+    "hiragana": "き",
+    "romaji": "ki",
+    "traducao": "espírito, mente"
+  },
+  {
+    "kanji": "円",
+    "hiragana": "えん",
+    "romaji": "en",
+    "traducao": "círculo, iene"
+  },
+  {
+    "kanji": "入",
+    "hiragana": "いり",
+    "romaji": "iri",
+    "traducao": "entrada"
+  },
+  {
+    "kanji": "出",
+    "hiragana": "で",
+    "romaji": "de",
+    "traducao": "saída"
+  },
+  {
+    "kanji": "立",
+    "hiragana": "たつ",
+    "romaji": "tatsu",
+    "traducao": "ficar de pé"
+  },
+  {
+    "kanji": "休",
+    "hiragana": "やすむ",
+    "romaji": "yasumu",
+    "traducao": "descansar"
+  },
+  {
+    "kanji": "先",
+    "hiragana": "さき",
+    "romaji": "saki",
+    "traducao": "antes, futuro"
+  },
+  {
+    "kanji": "夕",
+    "hiragana": "ゆう",
+    "romaji": "yuu",
+    "traducao": "tarde, entardecer"
+  },
+  {
+    "kanji": "本",
+    "hiragana": "ほん",
+    "romaji": "hon",
+    "traducao": "livro, origem"
+  },
+  {
+    "kanji": "文",
+    "hiragana": "ふみ",
+    "romaji": "fumi",
+    "traducao": "letra, escrita"
+  },
+  {
+    "kanji": "字",
+    "hiragana": "じ",
+    "romaji": "ji",
+    "traducao": "caractere, letra"
+  },
+  {
+    "kanji": "学",
+    "hiragana": "まなぶ",
+    "romaji": "manabu",
+    "traducao": "estudar"
+  },
+  {
+    "kanji": "校",
+    "hiragana": "こう",
+    "romaji": "kou",
+    "traducao": "escola"
+  },
+  {
+    "kanji": "村",
+    "hiragana": "むら",
+    "romaji": "mura",
+    "traducao": "vila"
+  },
+  {
+    "kanji": "町",
+    "hiragana": "まち",
+    "romaji": "machi",
+    "traducao": "cidade"
+  },
+  {
+    "kanji": "森",
+    "hiragana": "もり",
+    "romaji": "mori",
+    "traducao": "floresta"
+  },
+  {
+    "kanji": "正",
+    "hiragana": "ただしい",
+    "romaji": "tadashii",
+    "traducao": "correto"
+  },
+  {
+    "kanji": "水",
+    "hiragana": "みず",
+    "romaji": "mizu",
+    "traducao": "água"
+  },
+  {
+    "kanji": "火",
+    "hiragana": "ひ",
+    "romaji": "hi",
+    "traducao": "fogo"
+  },
+  {
+    "kanji": "玉",
+    "hiragana": "たま",
+    "romaji": "tama",
+    "traducao": "bola, jóia"
+  },
+  {
+    "kanji": "王",
+    "hiragana": "おう",
+    "romaji": "ou",
+    "traducao": "rei"
+  },
+  {
+    "kanji": "石",
+    "hiragana": "いし",
+    "romaji": "ishi",
+    "traducao": "pedra"
+  },
+  {
+    "kanji": "竹",
+    "hiragana": "たけ",
+    "romaji": "take",
+    "traducao": "bambu"
+  },
+  {
+    "kanji": "糸",
+    "hiragana": "いと",
+    "romaji": "ito",
+    "traducao": "fio"
+  },
+  {
+    "kanji": "貝",
+    "hiragana": "かい",
+    "romaji": "kai",
+    "traducao": "concha"
+  },
+  {
+    "kanji": "車",
+    "hiragana": "くるま",
+    "romaji": "kuruma",
+    "traducao": "carro"
+  },
+  {
+    "kanji": "金",
+    "hiragana": "かね",
+    "romaji": "kane",
+    "traducao": "ouro, dinheiro"
+  },
+  {
+    "kanji": "雨",
+    "hiragana": "あめ",
+    "romaji": "ame",
+    "traducao": "chuva"
+  },
+  {
+    "kanji": "赤",
+    "hiragana": "あか",
+    "romaji": "aka",
+    "traducao": "vermelho"
+  },
+  {
+    "kanji": "青",
+    "hiragana": "あお",
+    "romaji": "ao",
+    "traducao": "azul"
+  },
+  {
+    "kanji": "白",
+    "hiragana": "しろ",
+    "romaji": "shiro",
+    "traducao": "branco"
+  }
+]

@@ -2,461 +2,461 @@
   {
     "letterGroup": "hiragana",
     "letter": "あ",
-    "translations": "a"
+    "translation": "a"
   },
   {
     "letterGroup": "katakana",
     "letter": "ア",
-    "translations": "a"
+    "translation": "a"
   },
   {
     "letterGroup": "hiragana",
     "letter": "い",
-    "translations": "i"
+    "translation": "i"
   },
   {
     "letterGroup": "katakana",
     "letter": "イ",
-    "translations": "i"
+    "translation": "i"
   },
   {
     "letterGroup": "hiragana",
     "letter": "う",
-    "translations": "u"
+    "translation": "u"
   },
   {
     "letterGroup": "katakana",
     "letter": "ウ",
-    "translations": "u"
+    "translation": "u"
   },
   {
     "letterGroup": "hiragana",
     "letter": "え",
-    "translations": "e"
+    "translation": "e"
   },
   {
     "letterGroup": "katakana",
     "letter": "エ",
-    "translations": "e"
+    "translation": "e"
   },
   {
     "letterGroup": "hiragana",
     "letter": "お",
-    "translations": "o"
+    "translation": "o"
   },
   {
     "letterGroup": "katakana",
     "letter": "オ",
-    "translations": "o"
+    "translation": "o"
   },
   {
     "letterGroup": "hiragana",
     "letter": "か",
-    "translations": "ka"
+    "translation": "ka"
   },
   {
     "letterGroup": "katakana",
     "letter": "カ",
-    "translations": "ka"
+    "translation": "ka"
   },
   {
     "letterGroup": "hiragana",
     "letter": "き",
-    "translations": "ki"
+    "translation": "ki"
   },
   {
     "letterGroup": "katakana",
     "letter": "キ",
-    "translations": "ki"
+    "translation": "ki"
   },
   {
     "letterGroup": "hiragana",
     "letter": "く",
-    "translations": "ku"
+    "translation": "ku"
   },
   {
     "letterGroup": "katakana",
     "letter": "ク",
-    "translations": "ku"
+    "translation": "ku"
   },
   {
     "letterGroup": "hiragana",
     "letter": "け",
-    "translations": "ke"
+    "translation": "ke"
   },
   {
     "letterGroup": "katakana",
     "letter": "ケ",
-    "translations": "ke"
+    "translation": "ke"
   },
   {
     "letterGroup": "hiragana",
     "letter": "こ",
-    "translations": "ko"
+    "translation": "ko"
   },
   {
     "letterGroup": "katakana",
     "letter": "コ",
-    "translations": "ko"
+    "translation": "ko"
   },
   {
     "letterGroup": "hiragana",
     "letter": "さ",
-    "translations": "sa"
+    "translation": "sa"
   },
   {
     "letterGroup": "katakana",
     "letter": "サ",
-    "translations": "sa"
+    "translation": "sa"
   },
   {
     "letterGroup": "hiragana",
     "letter": "し",
-    "translations": "shi"
+    "translation": "shi"
   },
   {
     "letterGroup": "katakana",
     "letter": "シ",
-    "translations": "shi"
+    "translation": "shi"
   },
   {
     "letterGroup": "hiragana",
     "letter": "す",
-    "translations": "su"
+    "translation": "su"
   },
   {
     "letterGroup": "katakana",
     "letter": "ス",
-    "translations": "su"
+    "translation": "su"
   },
   {
     "letterGroup": "hiragana",
     "letter": "せ",
-    "translations": "se"
+    "translation": "se"
   },
   {
     "letterGroup": "katakana",
     "letter": "セ",
-    "translations": "se"
+    "translation": "se"
   },
   {
     "letterGroup": "hiragana",
     "letter": "そ",
-    "translations": "so"
+    "translation": "so"
   },
   {
     "letterGroup": "katakana",
     "letter": "ソ",
-    "translations": "so"
+    "translation": "so"
   },
   {
     "letterGroup": "hiragana",
     "letter": "た",
-    "translations": "ta"
+    "translation": "ta"
   },
   {
     "letterGroup": "katakana",
     "letter": "タ",
-    "translations": "ta"
+    "translation": "ta"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ち",
-    "translations": "chi"
+    "translation": "chi"
   },
   {
     "letterGroup": "katakana",
     "letter": "チ",
-    "translations": "chi"
+    "translation": "chi"
   },
   {
     "letterGroup": "hiragana",
     "letter": "つ",
-    "translations": "tsu"
+    "translation": "tsu"
   },
   {
     "letterGroup": "katakana",
     "letter": "ツ",
-    "translations": "tsu"
+    "translation": "tsu"
   },
   {
     "letterGroup": "hiragana",
     "letter": "て",
-    "translations": "te"
+    "translation": "te"
   },
   {
     "letterGroup": "katakana",
     "letter": "テ",
-    "translations": "te"
+    "translation": "te"
   },
   {
     "letterGroup": "hiragana",
     "letter": "と",
-    "translations": "to"
+    "translation": "to"
   },
   {
     "letterGroup": "katakana",
     "letter": "ト",
-    "translations": "to"
+    "translation": "to"
   },
   {
     "letterGroup": "hiragana",
     "letter": "な",
-    "translations": "na"
+    "translation": "na"
   },
   {
     "letterGroup": "katakana",
     "letter": "ナ",
-    "translations": "na"
+    "translation": "na"
   },
   {
     "letterGroup": "hiragana",
     "letter": "に",
-    "translations": "ni"
+    "translation": "ni"
   },
   {
     "letterGroup": "katakana",
     "letter": "ニ",
-    "translations": "ni"
+    "translation": "ni"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ぬ",
-    "translations": "nu"
+    "translation": "nu"
   },
   {
     "letterGroup": "katakana",
     "letter": "ヌ",
-    "translations": "nu"
+    "translation": "nu"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ね",
-    "translations": "ne"
+    "translation": "ne"
   },
   {
     "letterGroup": "katakana",
     "letter": "ネ",
-    "translations": "ne"
+    "translation": "ne"
   },
   {
     "letterGroup": "hiragana",
     "letter": "の",
-    "translations": "no"
+    "translation": "no"
   },
   {
     "letterGroup": "katakana",
     "letter": "ノ",
-    "translations": "no"
+    "translation": "no"
   },
   {
     "letterGroup": "hiragana",
     "letter": "は",
-    "translations": "ha"
+    "translation": "ha"
   },
   {
     "letterGroup": "katakana",
     "letter": "ハ",
-    "translations": "ha"
+    "translation": "ha"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ひ",
-    "translations": "hi"
+    "translation": "hi"
   },
   {
     "letterGroup": "katakana",
     "letter": "ヒ",
-    "translations": "hi"
+    "translation": "hi"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ふ",
-    "translations": "fu"
+    "translation": "fu"
   },
   {
     "letterGroup": "katakana",
     "letter": "フ",
-    "translations": "fu"
+    "translation": "fu"
   },
   {
     "letterGroup": "hiragana",
     "letter": "へ",
-    "translations": "he"
+    "translation": "he"
   },
   {
     "letterGroup": "katakana",
     "letter": "ヘ",
-    "translations": "he"
+    "translation": "he"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ほ",
-    "translations": "ho"
+    "translation": "ho"
   },
   {
     "letterGroup": "katakana",
     "letter": "ホ",
-    "translations": "ho"
+    "translation": "ho"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ま",
-    "translations": "ma"
+    "translation": "ma"
   },
   {
     "letterGroup": "katakana",
     "letter": "マ",
-    "translations": "ma"
+    "translation": "ma"
   },
   {
     "letterGroup": "hiragana",
     "letter": "み",
-    "translations": "mi"
+    "translation": "mi"
   },
   {
     "letterGroup": "katakana",
     "letter": "ミ",
-    "translations": "mi"
+    "translation": "mi"
   },
   {
     "letterGroup": "hiragana",
     "letter": "む",
-    "translations": "mu"
+    "translation": "mu"
   },
   {
     "letterGroup": "katakana",
     "letter": "ム",
-    "translations": "mu"
+    "translation": "mu"
   },
   {
     "letterGroup": "hiragana",
     "letter": "め",
-    "translations": "me"
+    "translation": "me"
   },
   {
     "letterGroup": "katakana",
     "letter": "メ",
-    "translations": "me"
+    "translation": "me"
   },
   {
     "letterGroup": "hiragana",
     "letter": "も",
-    "translations": "mo"
+    "translation": "mo"
   },
   {
     "letterGroup": "katakana",
     "letter": "モ",
-    "translations": "mo"
+    "translation": "mo"
   },
   {
     "letterGroup": "hiragana",
     "letter": "や",
-    "translations": "ya"
+    "translation": "ya"
   },
   {
     "letterGroup": "katakana",
     "letter": "ヤ",
-    "translations": "ya"
+    "translation": "ya"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ゆ",
-    "translations": "yu"
+    "translation": "yu"
   },
   {
     "letterGroup": "katakana",
     "letter": "ユ",
-    "translations": "yu"
+    "translation": "yu"
   },
   {
     "letterGroup": "hiragana",
     "letter": "よ",
-    "translations": "yo"
+    "translation": "yo"
   },
   {
     "letterGroup": "katakana",
     "letter": "ヨ",
-    "translations": "yo"
+    "translation": "yo"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ら",
-    "translations": "ra"
+    "translation": "ra"
   },
   {
     "letterGroup": "katakana",
     "letter": "ラ",
-    "translations": "ra"
+    "translation": "ra"
   },
   {
     "letterGroup": "hiragana",
     "letter": "り",
-    "translations": "ri"
+    "translation": "ri"
   },
   {
     "letterGroup": "katakana",
     "letter": "リ",
-    "translations": "ri"
+    "translation": "ri"
   },
   {
     "letterGroup": "hiragana",
     "letter": "る",
-    "translations": "ru"
+    "translation": "ru"
   },
   {
     "letterGroup": "katakana",
     "letter": "ル",
-    "translations": "ru"
+    "translation": "ru"
   },
   {
     "letterGroup": "hiragana",
     "letter": "れ",
-    "translations": "re"
+    "translation": "re"
   },
   {
     "letterGroup": "katakana",
     "letter": "レ",
-    "translations": "re"
+    "translation": "re"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ろ",
-    "translations": "ro"
+    "translation": "ro"
   },
   {
     "letterGroup": "katakana",
     "letter": "ロ",
-    "translations": "ro"
+    "translation": "ro"
   },
   {
     "letterGroup": "hiragana",
     "letter": "わ",
-    "translations": "wa"
+    "translation": "wa"
   },
   {
     "letterGroup": "katakana",
     "letter": "ワ",
-    "translations": "wa"
+    "translation": "wa"
   },
   {
     "letterGroup": "hiragana",
     "letter": "を",
-    "translations": "wo"
+    "translation": "wo"
   },
   {
     "letterGroup": "katakana",
     "letter": "ヲ",
-    "translations": "wo"
+    "translation": "wo"
   },
   {
     "letterGroup": "hiragana",
     "letter": "ん",
-    "translations": "n"
+    "translation": "n"
   },
   {
     "letterGroup": "katakana",
     "letter": "ン",
-    "translations": "n"
+    "translation": "n"
   }
 ]
