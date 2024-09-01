@@ -10,7 +10,6 @@
     </div>
     <p>{{ props.text }}</p>
     <Badge v-if="props.badge" :value="props.badge" />
-    {{ props.toEmit }}
   </div>
 </template>
 <script setup>
@@ -26,8 +25,9 @@ const props = defineProps(['icon', 'character', 'text', 'badge', 'toEmit'])
 
 .sidebar-items:hover {
   cursor: pointer;
+  background-color: var(--custom-background-4);
+  border-radius: 4px;
 }
-
 .sidebar-item-size {
   font-size: 20px;
 }

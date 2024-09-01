@@ -1,6 +1,16 @@
 <template>
   <div class="card flex justify-center">
-    <Menu :model="items" class="w-full md:w-60" style="height: 100%">
+    <Menu
+      :model="items"
+      class="w-full md:w-60"
+      style="
+        height: 100%;
+        background-color: var(--custom-background-2);
+        color: white;
+        border: none;
+        border-radius: 10px;
+      "
+    >
       <template #start>
         <SidebarHeader title="NIHONGO CARDS" subtitle="日本語カード" />
       </template>
@@ -29,15 +39,7 @@ import SidebarItems from './SidebarItems.vue'
 
 const items = ref([
   {
-    separator: true
-  },
-  {
     items: [
-      {
-        character: '正',
-        text: 'Sequencia de dias',
-        badge: 2
-      },
       {
         text: 'Hiragana',
         character: 'あ',

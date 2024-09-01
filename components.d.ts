@@ -12,11 +12,15 @@ declare module 'vue' {
     CardComponent: typeof import('./src/components/Card/CardComponent.vue')['default']
     Menu: typeof import('primevue/menu')['default']
     OverlayBadge: typeof import('primevue/overlaybadge')['default']
+    PrePraticeComponent: typeof import('./src/components/Card/PrePraticeComponent.vue')['default']
+    ProgressBar: typeof import('primevue/progressbar')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SideBar: typeof import('./src/components/Sidebar/SideBar.vue')['default']
     SidebarHeader: typeof import('./src/components/Sidebar/SidebarHeader.vue')['default']
     SidebarItems: typeof import('./src/components/Sidebar/SidebarItems.vue')['default']
+    Skeleton: typeof import('primevue/skeleton')['default']
+    Slider: typeof import('primevue/slider')['default']
     TopBar: typeof import('./src/components/TopBar.vue')['default']
   }
   export interface ComponentCustomProperties {

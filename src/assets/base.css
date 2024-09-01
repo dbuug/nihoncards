@@ -19,6 +19,12 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --custom-background-1: #f3e3e3;
+  --custom-background-2: #eac6cc;
+  --custom-background-3: #dcaa9f;
+  --custom-background-4: #7d9b9f;
+  --custom-background-5: #b38b84;
 }
 
 /* semantic color variables for this project */
@@ -38,12 +44,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+    --color-background: var(--custom-background-1);
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+    --color-border: var(--custom-background-3);
+    --color-border-hover: var(--custom-background-3);
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
@@ -59,6 +63,8 @@
 }
 
 body {
+  --p-menu-color: #eac6cc;
+
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);

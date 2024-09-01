@@ -6,14 +6,16 @@ import PraticeView from './PraticeView.vue'
 let praticeMode = ref(0)
 let praticeSection = ref(0)
 praticeMode.value = false
-praticeSection.value = 'hiragana'
+praticeSection.value = undefined
 </script>
 
 <template>
-  <SideBar v-if="praticeMode === false" @update-section="(b) => (praticeSection = b)" />
-  <PraticeView
-    :praticeMode="praticeMode"
-    :praticeSection="praticeSection"
-    @update-pratice="(b) => (praticeMode = b)"
-  />
+  <div :class="{ 'app-non-pratice': !praticeMode, 'app-in-pratice': praticeMode }">
+    <SideBar v-if="praticeMode === false" @update-section="(b) => (praticeSection = b)" />
+    <PraticeView
+      :praticeMode="praticeMode"
+      :praticeSection="praticeSection"
+      @update-pratice="(b) => (praticeMode = b)"
+    />
+  </div>
 </template>
