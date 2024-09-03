@@ -2,20 +2,36 @@
 import { ref } from 'vue'
 import Skeleton from 'primevue/skeleton'
 
+const props = defineProps(['cards'])
+
 const hint = ref(0)
 hint.value = false
 const fliped = ref(0)
 fliped.value = false
-const props = defineProps(['cards'])
 
-const kana = 'あ'
+const lenCards = ref(0)
+lenCards.value = 0
+
+function shuffleArray(array) {
+  const copy = array.slice()
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[copy[i], copy[j]] = [copy[j], copy[i]]
+  }
+  return copy
+}
+
+const kanas = ref(0)
+kanas.value = shuffleArray(props.cards)
+
+const easy = () => {
+  lenCards.value += 1
+}
 </script>
 <template>
-  <div class="top-bar">
-    <ProgressBar value="40"> {{ value }}/100 </ProgressBar>
-  </div>
   <div :class="{ card: true, shake: disabled }">
-    <div class="kana">{{ kana }}</div>
+    <div class="top-bar">{{ lenCards + 1 }}/{{ props.cards.length }}</div>
+    <div class="kana">{{ kanas[lenCards].letter }}</div>
     <div class="hints" @click="hint = !hint">
       <div>Clique para ver a dica:</div>
       <Skeleton v-if="!hint" class="mb-2" style="background: var(--custom-background-1)"></Skeleton>
@@ -32,7 +48,7 @@ const kana = 'あ'
     </div>
   </div>
   <div class="options">
-    <Button label="Fácil" />
+    <Button label="Fácil" @click="easy()" />
     <Button label="Médio" />
     <Button label="Difícil" />
     <Button label="Esqueci" />
@@ -47,7 +63,7 @@ const kana = 'あ'
   padding: 20px;
   margin: 20px;
   text-align: center;
-  height: 300px;
+  height: 330px;
 }
 .options {
   width: 30%;
@@ -60,8 +76,8 @@ const kana = 'あ'
   font-size: 100px;
 }
 .top-bar {
-  width: 40%;
-  margin-top: 20px;
+  text-align: center;
+  color: white;
 }
 .hints {
   width: 50%;

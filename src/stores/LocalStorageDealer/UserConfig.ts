@@ -54,7 +54,6 @@ export const localStorageConfig = defineStore('localStorageConfig', {
 
     getters: {
         getLocalStorageConfig: (state) => {
-            console.log('local config')
             const hiragana = localStorage.getItem('hiragana')
             const katakana = localStorage.getItem('katakana')
             const n5 = localStorage.getItem('n5')
