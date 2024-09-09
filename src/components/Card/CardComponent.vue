@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import Skeleton from 'primevue/skeleton'
 
-const props = defineProps(['cards'])
+const props = defineProps(['cards', 'praticeType', 'isKanji'])
 
 const hint = ref(0)
 hint.value = false
@@ -27,31 +27,41 @@ kanas.value = shuffleArray(props.cards)
 const easy = () => {
   lenCards.value += 1
 }
+const nextCard = () => {
+  lenCards.value += 1
+  fliped.value = false
+  hint.value = false
+}
 </script>
 <template>
   <div :class="{ card: true, shake: disabled }">
     <div class="top-bar">{{ lenCards + 1 }}/{{ props.cards.length }}</div>
     <div class="kana">{{ kanas[lenCards].letter }}</div>
-    <div class="hints" @click="hint = !hint">
+    <div class="hints" @click="hint = !hint" v-if="isKanji">
       <div>Clique para ver a dica:</div>
       <Skeleton v-if="!hint" class="mb-2" style="background: var(--custom-background-1)"></Skeleton>
-      <div v-if="hint">hiragana se kanji / romanji</div>
+      <div v-if="hint">{{ kanas[lenCards].hiragana }}</div>
     </div>
     <div class="hints" @click="fliped = !fliped">
       <div>Clique para ver a resposta:</div>
       <Skeleton
         v-if="!fliped"
         class="mb-2"
-        style="background: var(--custom-background-1)"
+        style="background: var(--custom-background-1); height: 1.8rem"
       ></Skeleton>
-      <div v-if="fliped">traducao when flipped</div>
+      <div v-if="fliped" class="response">
+        {{ String(kanas[lenCards].translation).toUpperCase() }}
+      </div>
     </div>
   </div>
-  <div class="options">
+  <div class="options" v-if="praticeType === 'spaced'">
     <Button label="Fácil" @click="easy()" />
     <Button label="Médio" />
     <Button label="Difícil" />
     <Button label="Esqueci" />
+  </div>
+  <div style="margin-bottom: 20px" v-if="praticeType === 'full'">
+    <Button label="Próximo" @click="nextCard()" />
   </div>
 </template>
 <style scoped>
@@ -87,5 +97,9 @@ const easy = () => {
 }
 .hints:hover {
   cursor: pointer;
+}
+.response {
+  letter-spacing: 2px;
+  font-size: 25px;
 }
 </style>

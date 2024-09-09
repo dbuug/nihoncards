@@ -1,9 +1,12 @@
 <script setup>
 import { ref } from 'vue'
-const props = defineProps(['cards'])
+const props = defineProps(['cards', 'section'])
 const qtdCardsToPratice = ref(0)
 </script>
 <template>
+  <div v-if="props.section === 'hiragana'" class="title">Hiragana - ひらがな</div>
+  <div v-if="props.section === 'katakana'" class="title">Katakana - カタカナ</div>
+  <div v-if="props.section === 'n5'" class="title">Kanji - 漢字</div>
   <div class="p-pratice-box">
     <div class="p-inside-box">
       <div class="title">Prática aleatória</div>
@@ -13,7 +16,7 @@ const qtdCardsToPratice = ref(0)
       <Button
         label="Prática Aleatória"
         class="margin-top: auto"
-        @click="$emit('startPratice', true, 0)"
+        @click="$emit('startPratice', true, 0, 'full')"
       />
     </div>
     <div class="p-inside-box">
@@ -29,7 +32,7 @@ const qtdCardsToPratice = ref(0)
       <Button
         label="Prática Espaçada"
         class="margin-top: auto"
-        @click="$emit('startPratice', true, qtdCardsToPratice)"
+        @click="$emit('startPratice', true, qtdCardsToPratice, 'spaced')"
       />
     </div>
   </div>

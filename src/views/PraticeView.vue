@@ -11,8 +11,10 @@ const user = localStorageConfig()
 user.getLocalStorageConfig
 
 const qtdToPratice = ref(0)
+const praticeType = ref(0)
 
-const startPratice = (pratice, qtd) => {
+const startPratice = (pratice, qtd, pt) => {
+  praticeType.value = pt
   qtdToPratice.value = qtd
   emit('updatePratice', pratice)
 }
@@ -37,9 +39,14 @@ const getN5Cards = () => {
     <PrePraticeComponent
       v-if="props.praticeMode === false"
       :cards="user.getHiraganaToPratice"
+      :section="props.praticeSection"
       @start-pratice="startPratice"
     />
-    <CardComponent v-if="props.praticeMode === true" :cards="getHiraganaCards()" />
+    <CardComponent
+      v-if="props.praticeMode === true"
+      :praticeType="praticeType"
+      :cards="getHiraganaCards()"
+    />
     <Button
       v-if="props.praticeMode === true"
       @click="$emit('updatePratice', false)"
@@ -50,9 +57,14 @@ const getN5Cards = () => {
     <PrePraticeComponent
       v-if="props.praticeMode === false"
       :cards="user.getKatakanaToPratice"
+      :section="props.praticeSection"
       @start-pratice="startPratice"
     />
-    <CardComponent v-if="props.praticeMode === true" :cards="getKatakanaCards()" />
+    <CardComponent
+      v-if="props.praticeMode === true"
+      :praticeType="praticeType"
+      :cards="getKatakanaCards()"
+    />
     <Button
       v-if="props.praticeMode === true"
       @click="$emit('updatePratice', false)"
@@ -63,9 +75,15 @@ const getN5Cards = () => {
     <PrePraticeComponent
       v-if="props.praticeMode === false"
       :cards="user.getN5ToPratice"
+      :section="props.praticeSection"
       @start-pratice="startPratice"
     />
-    <CardComponent v-if="props.praticeMode === true" :cards="getN5Cards()" />
+    <CardComponent
+      v-if="props.praticeMode === true"
+      :praticeType="praticeType"
+      :isKanji="true"
+      :cards="getN5Cards()"
+    />
     <Button
       v-if="props.praticeMode === true"
       @click="$emit('updatePratice', false)"
