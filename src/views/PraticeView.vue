@@ -3,6 +3,7 @@ import { localStorageConfig } from '@/stores/LocalStorageDealer/UserConfig'
 import PrePraticeComponent from '@/components/Card/PrePraticeComponent.vue'
 import CardComponent from '@/components/Card/CardComponent.vue'
 import { ref, defineEmits } from 'vue'
+import QuizComponent from '@/components/Card/QuizComponent.vue'
 
 const props = defineProps(['praticeMode', 'praticeSection'])
 const emit = defineEmits(['updatePratice'])
@@ -17,6 +18,16 @@ const startPratice = (pratice, qtd, pt) => {
   praticeType.value = pt
   qtdToPratice.value = qtd
   emit('updatePratice', pratice)
+}
+
+const quizCards = ref()
+const startQuiz = (hiraganaCheck, katakanaCheck, n5Check) => {
+  const cards = []
+  if (hiraganaCheck) cards.push(...user.hiragana)
+  if (katakanaCheck) cards.push(...user.katakana)
+  if (n5Check) cards.push(...user.n5)
+  quizCards.value = cards
+  emit('updatePratice', true)
 }
 
 const getHiraganaCards = () => {
@@ -84,6 +95,20 @@ const getN5Cards = () => {
       :isKanji="true"
       :cards="getN5Cards()"
     />
+    <Button
+      v-if="props.praticeMode === true"
+      @click="$emit('updatePratice', false)"
+      label="Cancelar Sessão"
+    />
+  </div>
+  <div v-if="props.praticeSection === 'quiz'" class="pratice-box">
+    <QuizPrePraticeComponent
+      v-if="props.praticeMode === false"
+      :cards="quizCards"
+      :section="props.praticeSection"
+      @start-quiz="startQuiz"
+    />
+    <QuizComponent v-if="props.praticeMode === true" :cards="quizCards" />
     <Button
       v-if="props.praticeMode === true"
       @click="$emit('updatePratice', false)"

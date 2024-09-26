@@ -56,21 +56,26 @@ const items = ref([
         toEmit: 'n5'
       },
       {
-        text: 'Exportar',
-        icon: 'pi pi-file-export'
-      },
-      {
-        text: 'Importar',
-        icon: 'pi pi-file-import'
-      },
-      {
-        text: 'Contato',
-        icon: 'pi pi-discord'
-      },
-      {
-        text: 'Informações',
-        icon: 'pi pi-info-circle'
+        text: 'Modo Quiz',
+        character: '問',
+        toEmit: 'quiz'
       }
+      // {
+      //   text: 'Exportar',
+      //   icon: 'pi pi-file-export'
+      // },
+      // {
+      //   text: 'Importar',
+      //   icon: 'pi pi-file-import'
+      // },
+      // {
+      //   text: 'Contato',
+      //   icon: 'pi pi-discord'
+      // },
+      // {
+      //   text: 'Informações',
+      //   icon: 'pi pi-info-circle'
+      // }
     ]
   }
 ])

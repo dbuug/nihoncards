@@ -1,7 +1,5 @@
 <script setup>
-import { ref } from 'vue'
 const props = defineProps(['cards', 'section'])
-const qtdCardsToPratice = ref(0)
 </script>
 <template>
   <div v-if="props.section === 'hiragana'" class="title">Hiragana - ひらがな</div>
@@ -22,17 +20,17 @@ const qtdCardsToPratice = ref(0)
     <div class="p-inside-box">
       <div class="title">Repetição espaçada</div>
       <div class="subtitle">Voce possui {{ props.cards.length }} cards ao total para praticar</div>
-      <div>Selecione quantos deseja praticar: {{ qtdCardsToPratice }}</div>
+      <!-- <div>Selecione quantos deseja praticar: {{ qtdCardsToPratice }}</div>
       <Slider
         v-model="qtdCardsToPratice"
         :min="0"
         :max="props.cards.length"
         style="width: 40%; margin: 20px 20px 40px 10px"
-      />
+      /> -->
       <Button
         label="Prática Espaçada"
         class="margin-top: auto"
-        @click="$emit('startPratice', true, qtdCardsToPratice, 'spaced')"
+        @click="$emit('startPratice', true, 1, 'spaced')"
       />
     </div>
   </div>
