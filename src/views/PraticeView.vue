@@ -57,6 +57,7 @@ const getN5Cards = () => {
       v-if="props.praticeMode === true"
       :praticeType="praticeType"
       :cards="getHiraganaCards()"
+      :section="props.praticeSection"
     />
     <Button
       v-if="props.praticeMode === true"
@@ -75,6 +76,7 @@ const getN5Cards = () => {
       v-if="props.praticeMode === true"
       :praticeType="praticeType"
       :cards="getKatakanaCards()"
+      :section="props.praticeSection"
     />
     <Button
       v-if="props.praticeMode === true"
@@ -92,8 +94,9 @@ const getN5Cards = () => {
     <CardComponent
       v-if="props.praticeMode === true"
       :praticeType="praticeType"
+      :cards="user.getN5ToPratice"
       :isKanji="true"
-      :cards="getN5Cards()"
+      :section="props.praticeSection"
     />
     <Button
       v-if="props.praticeMode === true"

@@ -10,7 +10,7 @@ interface kanas {
 }
 
 interface kanjis {
-    kanji: string
+    letter: string
     hiragana: string
     romaji: string
     translation: string
@@ -31,22 +31,45 @@ export const localStorageConfig = defineStore('localStorageConfig', {
     } as InitialSetup),
 
     actions: {
-        setNextDay: (alphabet: string, kana: kanas | kanjis, choice: string) => {
+        setNextDay(alphabet: string, kana: kanas, type: string, time: number) {
+            // const calcTime = (864000000 * time)
             switch (alphabet) {
                 case 'hiragana':
-                    console.log('case hiragana')
-                    console.log(kana)
-                    console.log(choice)
+                    // eslint-disable-next-line no-case-declarations
+                    const hira = this.hiragana
+                    hira.map((h: kanas) => {
+                        if (h.letter === kana.letter) {
+                            h.lastChoice = type
+                            h.nextDate = new Date().getTime() + (864000000 * time)
+                        }
+                        return h
+                    })
+                    localStorage.setItem('hiragana', JSON.stringify(hira))
                     break;
                 case 'katakana':
-                    console.log('case katakana')
-                    console.log(kana)
-                    console.log(choice)
+                    // eslint-disable-next-line no-case-declarations
+                    const kt = this.katakana
+                    kt.map((h: kanas) => {
+                        if (h.letter === kana.letter) {
+                            h.lastChoice = type
+                            h.nextDate = new Date().getTime() + (864000000 * time)
+                        }
+                        return h
+                    })
+                    localStorage.setItem('katakana', JSON.stringify(kt))
                     break;
-                case 'kanji':
-                    console.log('case knaji')
-                    console.log(kana)
-                    console.log(choice)
+                case 'n5':
+                    // eslint-disable-next-line no-case-declarations
+                    const n5 = this.n5
+                    n5.map((h: kanjis) => {
+                        console.log(kana.letter)
+                        if (h.letter == kana.letter) {
+                            h.lastChoice = type
+                            h.nextDate = new Date().getTime() + (864000000 * time)
+                        }
+                        return h
+                    })
+                    localStorage.setItem('n5', JSON.stringify(n5))
                     break;
             }
         }

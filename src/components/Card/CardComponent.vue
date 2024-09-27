@@ -1,8 +1,10 @@
 <script setup>
 import { ref } from 'vue'
 import Skeleton from 'primevue/skeleton'
+import { localStorageConfig } from '@/stores/LocalStorageDealer/UserConfig'
 
-const props = defineProps(['cards', 'praticeType', 'isKanji'])
+const props = defineProps(['cards', 'praticeType', 'isKanji', 'section'])
+const user = localStorageConfig()
 
 const hint = ref(0)
 hint.value = false
@@ -22,10 +24,26 @@ function shuffleArray(array) {
 }
 
 const kanas = ref(0)
+console.log(props)
 kanas.value = shuffleArray(props.cards)
 
-const easy = () => {
+const easy = (kana) => {
   lenCards.value += 1
+  user.setNextDay(props.section, kana, 1, 5)
+  hint.value = false
+  fliped.value = false
+}
+const medium = (kana) => {
+  lenCards.value += 1
+  user.setNextDay(props.section, kana, 2, 3)
+  hint.value = false
+  fliped.value = false
+}
+const hard = (kana) => {
+  lenCards.value += 1
+  user.setNextDay(props.section, kana, 3, 1)
+  hint.value = false
+  fliped.value = false
 }
 const nextCard = () => {
   lenCards.value += 1
@@ -55,10 +73,9 @@ const nextCard = () => {
     </div>
   </div>
   <div class="options" v-if="praticeType === 'spaced'">
-    <Button label="Fácil" @click="easy()" />
-    <Button label="Médio" />
-    <Button label="Difícil" />
-    <Button label="Esqueci" />
+    <Button label="Fácil" @click="easy(kanas[lenCards])" />
+    <Button label="Médio" @click="medium(kanas[lenCards])" />
+    <Button label="Difícil" @click="hard(kanas[lenCards])" />
   </div>
   <div style="margin-bottom: 20px" v-if="praticeType === 'full'">
     <Button label="Próximo" @click="nextCard()" />
@@ -78,7 +95,7 @@ const nextCard = () => {
 .options {
   width: 30%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 5%;
   margin: 20px;
 }

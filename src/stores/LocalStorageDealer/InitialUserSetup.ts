@@ -21,7 +21,7 @@ interface kanas {
     romaji?: string
     translation: string
     seenTimes: number
-    lastChoice: string
+    lastChoice: number
     nextDate: number
 }
 
@@ -45,7 +45,7 @@ export const initialUserSetup = defineStore('initialUserSetup', {
                     letter: character.letter,
                     translation: character.translation,
                     seenTimes: 0,
-                    lastChoice: '',
+                    lastChoice: 0,
                     nextDate: currentDate.getTime()
                 }
             })
@@ -54,7 +54,7 @@ export const initialUserSetup = defineStore('initialUserSetup', {
                     letter: character.letter,
                     translation: character.translation,
                     seenTimes: 0,
-                    lastChoice: '',
+                    lastChoice: 0,
                     nextDate: currentDate.getTime()
                 }
             })
@@ -65,7 +65,7 @@ export const initialUserSetup = defineStore('initialUserSetup', {
                     romaji: character.romaji,
                     translation: character.translation,
                     seenTimes: 0,
-                    lastChoice: '',
+                    lastChoice: 0,
                     nextDate: currentDate.getTime()
                 }
             })
