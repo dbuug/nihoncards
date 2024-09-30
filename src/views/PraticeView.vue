@@ -4,6 +4,7 @@ import PrePraticeComponent from '@/components/Card/PrePraticeComponent.vue'
 import CardComponent from '@/components/Card/CardComponent.vue'
 import { ref, defineEmits } from 'vue'
 import QuizComponent from '@/components/Card/QuizComponent.vue'
+import AboutMe from '@/components/About/AboutMe.vue'
 
 const props = defineProps(['praticeMode', 'praticeSection'])
 const emit = defineEmits(['updatePratice'])
@@ -49,7 +50,9 @@ const toUpdatePratice = () => {
 </script>
 
 <template>
-  <div v-if="props.praticeSection === undefined">正 Sequencia de dias</div>
+  <div v-if="props.praticeSection === undefined || props.praticeSection === 'about'">
+    <AboutMe />
+  </div>
   <div v-if="props.praticeSection === 'hiragana'" class="pratice-box">
     <PrePraticeComponent
       v-if="props.praticeMode === false"

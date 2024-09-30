@@ -41,6 +41,11 @@ const items = ref([
   {
     items: [
       {
+        text: 'Sobre Nihoncards',
+        character: '自',
+        toEmit: 'about'
+      },
+      {
         text: 'Hiragana',
         character: 'あ',
         toEmit: 'hiragana'
