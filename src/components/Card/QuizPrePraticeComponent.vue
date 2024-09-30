@@ -46,6 +46,7 @@ const n5Check = ref()
 }
 .title {
   font-size: 30px;
+  color: white;
 }
 .selections {
   display: flex;

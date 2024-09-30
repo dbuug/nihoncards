@@ -1,7 +1,8 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, defineEmits } from 'vue'
 
 const props = defineProps(['cards', 'hiragana', 'katakana', 'n5'])
+const emit = defineEmits(['updatePratice'])
 
 const lenCards = ref(0)
 lenCards.value = 0
@@ -15,7 +16,6 @@ const score = ref(0)
 score.value = 0
 
 function shuffleArray(array) {
-  console.log(array)
   const copy = array.slice()
   for (let i = copy.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
@@ -70,7 +70,6 @@ function quiz(cards, number) {
 function buildQuiz() {
   const quizCards = []
   quizCards.push(quiz(props.cards, 10))
-  console.log(quizCards)
   return quizCards[0]
 }
 
@@ -82,17 +81,20 @@ const nextCard = (kana) => {
   setTimeout(() => {
     showCardValue.value = false
     lenCards.value += 1
-  }, '1000')
+  }, '500')
   responses.value.push(kana.translate)
   if (lenCards.value + 1 === kanas.value.length) {
     showFinal.value = true
   }
 }
+const finish = () => {
+  emit('updatePratice', false)
+}
 </script>
 <template>
-  <div :class="{ card: true, shake: disabled }">
+  <div :class="{ card: true }">
     <div v-if="!showFinal">
-      <div class="top-bar">{{ lenCards + 1 }}/{{ kanas.length }}</div>
+      <div class="top-bar">{{ lenCards }}/{{ kanas.length }}</div>
       <div class="kana">{{ kanas[lenCards].kana }}</div>
       <div class="hints" @click="hint = !hint">
         <div>Selecione a resposta correta:</div>
@@ -152,6 +154,7 @@ const nextCard = (kana) => {
           </div>
         </div>
       </div>
+      <div><Button label="Finalizar Sessão" @click="finish()" /></div>
     </div>
   </div>
   <div style="margin-bottom: 20px"></div>

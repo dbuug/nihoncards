@@ -62,7 +62,6 @@ export const localStorageConfig = defineStore('localStorageConfig', {
                     // eslint-disable-next-line no-case-declarations
                     const n5 = this.n5
                     n5.map((h: kanjis) => {
-                        console.log(kana.letter)
                         if (h.letter == kana.letter) {
                             h.lastChoice = type
                             h.nextDate = new Date().getTime() + (864000000 * time)

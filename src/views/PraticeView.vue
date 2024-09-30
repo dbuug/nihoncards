@@ -42,6 +42,10 @@ const getN5Cards = () => {
   if (qtdToPratice.value === 0) return user.n5
   return user.getN5Cards
 }
+
+const toUpdatePratice = () => {
+  emit('updatePratice', false)
+}
 </script>
 
 <template>
@@ -58,6 +62,7 @@ const getN5Cards = () => {
       :praticeType="praticeType"
       :cards="getHiraganaCards()"
       :section="props.praticeSection"
+      @update-pratice="toUpdatePratice"
     />
     <Button
       v-if="props.praticeMode === true"
@@ -77,6 +82,7 @@ const getN5Cards = () => {
       :praticeType="praticeType"
       :cards="getKatakanaCards()"
       :section="props.praticeSection"
+      @update-pratice="toUpdatePratice"
     />
     <Button
       v-if="props.praticeMode === true"
@@ -97,6 +103,7 @@ const getN5Cards = () => {
       :cards="user.getN5ToPratice"
       :isKanji="true"
       :section="props.praticeSection"
+      @update-pratice="toUpdatePratice"
     />
     <Button
       v-if="props.praticeMode === true"
@@ -111,7 +118,11 @@ const getN5Cards = () => {
       :section="props.praticeSection"
       @start-quiz="startQuiz"
     />
-    <QuizComponent v-if="props.praticeMode === true" :cards="quizCards" />
+    <QuizComponent
+      v-if="props.praticeMode === true"
+      :cards="quizCards"
+      @update-pratice="toUpdatePratice"
+    />
     <Button
       v-if="props.praticeMode === true"
       @click="$emit('updatePratice', false)"
@@ -123,6 +134,7 @@ const getN5Cards = () => {
 <style scoped>
 .pratice-box {
   width: 100%;
+  height: 100%;
   align-items: center;
   display: flex;
   flex-direction: column;

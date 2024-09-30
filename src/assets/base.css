@@ -20,11 +20,32 @@
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
-  --custom-background-1: #f3e3e3;
-  --custom-background-2: #eac6cc;
-  --custom-background-3: #dcaa9f;
+  --custom-background-1: #ffc0cb;
+  --custom-background-2: #e59ab6;
+  --custom-background-3: #8abf69;
   --custom-background-4: #7d9b9f;
   --custom-background-5: #b38b84;
+
+  --p-menu-background: #7d9b9f !important;
+  --p-menu-item-focus-background: #7d9b9f !important;
+
+  --p-checkbox-background: #7d9b9f !important;
+  --p-checkbox-hover-background: #7d9b9f !important;
+  --p-checkbox-border-color: #7d9b9f !important;
+  --p-checkbox-hover-border-color: #7d9b9f !important;
+  --p-checkbox-focus-border-color: #7d9b9f !important;
+
+  --p-checkbox-checked-background: #8abf69 !important;
+  --p-checkbox-checked-hover-background: #8abf69 !important;
+  --p-checkbox-checked-border-color: #8abf69 !important;
+  --p-checkbox-checked-hover-border-color: #8abf69 !important;
+  --p-checkbox-checked-focus-border-color: #8abf69 !important;
+
+  --p-button-primary-background: #7d9b9f !important;
+  --p-button-primary-border-color: #7d9b9f !important;
+  --p-button-primary-hover-background: #8abf69 !important;
+  --p-button-primary-hover-border-color: #8abf69 !important;
+  --p-button-primary-active-border-color: #8abf69 !important;
 }
 
 /* semantic color variables for this project */
@@ -63,7 +84,7 @@
 }
 
 body {
-  --p-menu-color: #eac6cc;
+  --p-menu-color: white;
 
   min-height: 100vh;
   color: var(--color-text);

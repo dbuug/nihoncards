@@ -21,6 +21,7 @@ const props = defineProps(['cards', 'section'])
       <div class="title">Repetição espaçada</div>
       <div class="subtitle">Voce possui {{ props.cards.length }} cards ao total para praticar</div>
       <Button
+        :disabled="props.cards.length === 0"
         label="Prática Espaçada"
         class="margin-top: auto"
         @click="$emit('startPratice', true, 1, 'spaced')"
@@ -46,5 +47,6 @@ const props = defineProps(['cards', 'section'])
 }
 .title {
   font-size: 30px;
+  color: white;
 }
 </style>
