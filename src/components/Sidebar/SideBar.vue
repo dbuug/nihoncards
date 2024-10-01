@@ -1,5 +1,18 @@
 <template>
-  <div class="card flex justify-center">
+  <div class="mobile-menu" :style="{ position: 'relative', width: '100%' }">
+    <div class="top-bar">
+      <span class="title">NIHONGO CARDS</span>
+      <span class="subtitle">日本語カード</span>
+      <span class="btns">
+        <Button label="Sobre" size="small" @click="$emit('updateSection', 'about')" />
+        <Button label="Hiragana" size="small" @click="$emit('updateSection', 'hiragana')" />
+        <Button label="Katakana" size="small" @click="$emit('updateSection', 'katakana')" />
+        <Button label="Kanji" size="small" @click="$emit('updateSection', 'n5')" />
+        <Button label="Quiz" size="small" @click="$emit('updateSection', 'quiz')" />
+      </span>
+    </div>
+  </div>
+  <div class="sidebar">
     <Menu
       :model="items"
       class="w-full md:w-60"
@@ -31,7 +44,41 @@
     </Menu>
   </div>
 </template>
-
+<style scoped>
+.mobile-menu {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    width: 100%;
+    z-index: 999999;
+  }
+  .top-bar {
+    width: 100%;
+    text-align: center;
+    height: 120px;
+    background-color: var(--custom-background-2);
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .btns {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+</style>
 <script setup>
 import { ref } from 'vue'
 import SidebarHeader from './SidebarHeader.vue'

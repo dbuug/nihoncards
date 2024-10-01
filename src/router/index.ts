@@ -5,7 +5,7 @@ const router = createRouter({
   history: createMemoryHistory(),
   routes: [
     {
-      path: '/nihoncards',
+      path: '/',
       name: 'home',
       component: HomeView
     }

@@ -21,5 +21,7 @@ declare module 'vue' {
     SideBar: typeof import('./src/components/Sidebar/SideBar.vue')['default']
     SidebarHeader: typeof import('./src/components/Sidebar/SidebarHeader.vue')['default']
     SidebarItems: typeof import('./src/components/Sidebar/SidebarItems.vue')['default']
+    SpeedDial: typeof import('primevue/speeddial')['default']
+    Toast: typeof import('primevue/toast')['default']
   }
 }

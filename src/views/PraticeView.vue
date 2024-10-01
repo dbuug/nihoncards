@@ -144,4 +144,16 @@ const toUpdatePratice = () => {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .pratice-box {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 </style>

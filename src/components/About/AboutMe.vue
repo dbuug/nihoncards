@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 .about-box {
   color: white;
@@ -59,5 +59,18 @@
 }
 .contacts {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-box {
+    color: white;
+    width: 80%;
+    padding: 10px;
+    margin: 25px;
+    text-align: center;
+    border: 1px solid #e59ab6;
+    border-radius: 8px;
+    background-color: #e59ab6;
+  }
 }
 </style>

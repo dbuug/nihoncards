@@ -148,4 +148,32 @@ const finish = () => {
 .fn-body {
   font-size: 25px;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+    background-color: var(--custom-background-2);
+    border-radius: 8px;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    height: 370px;
+  }
+
+  .options {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    margin: 20px;
+  }
+
+  .hints {
+    width: 50%;
+    height: 70px;
+    margin: 0 auto;
+    --p-skeleton-animation-background: var(--custom-background-2);
+  }
+}
 </style>
