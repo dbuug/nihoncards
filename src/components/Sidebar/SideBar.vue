@@ -76,6 +76,7 @@
     gap: 5px;
     align-items: center;
     justify-content: center;
+    margin-top: 5px;
   }
 }
 </style>

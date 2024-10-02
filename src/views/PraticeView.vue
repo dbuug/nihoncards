@@ -148,7 +148,7 @@ const toUpdatePratice = () => {
 @media only screen and (max-width: 600px) {
   .pratice-box {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     align-items: center;
     display: flex;
     flex-direction: column;

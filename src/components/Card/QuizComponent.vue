@@ -209,4 +209,24 @@ const finish = () => {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+    background-color: var(--custom-background-2);
+    border-radius: 8px;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    height: 330px;
+  }
+  .options {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5%;
+    margin: 20px;
+  }
+}
 </style>
