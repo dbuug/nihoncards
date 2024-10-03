@@ -1,11 +1,5 @@
 <script setup>
 const props = defineProps(['cards', 'section'])
-import { localStorageConfig } from '@/stores/LocalStorageDealer/UserConfig'
-import { onMounted } from 'vue'
-onMounted(() => {
-  const user = localStorageConfig()
-  user.getLocalStorageConfig
-})
 </script>
 <template>
   <div v-if="props.section === 'hiragana'" class="title">Hiragana - ひらがな</div>
