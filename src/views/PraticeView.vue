@@ -41,7 +41,7 @@ const getKatakanaCards = () => {
 }
 const getN5Cards = () => {
   if (qtdToPratice.value === 0) return user.n5
-  return user.getN5Cards
+  return user.getN5ToPratice
 }
 
 const toUpdatePratice = () => {
@@ -103,7 +103,7 @@ const toUpdatePratice = () => {
     <CardComponent
       v-if="props.praticeMode === true"
       :praticeType="praticeType"
-      :cards="user.getN5ToPratice"
+      :cards="getN5Cards()"
       :isKanji="true"
       :section="props.praticeSection"
       @update-pratice="toUpdatePratice"

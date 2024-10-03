@@ -46,6 +46,9 @@
   --p-button-primary-hover-background: #8abf69 !important;
   --p-button-primary-hover-border-color: #8abf69 !important;
   --p-button-primary-active-border-color: #8abf69 !important;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* semantic color variables for this project */

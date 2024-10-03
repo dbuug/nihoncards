@@ -1,5 +1,11 @@
 <script setup>
 const props = defineProps(['cards', 'section'])
+import { localStorageConfig } from '@/stores/LocalStorageDealer/UserConfig'
+import { onMounted } from 'vue'
+onMounted(() => {
+  const user = localStorageConfig()
+  user.getLocalStorageConfig
+})
 </script>
 <template>
   <div v-if="props.section === 'hiragana'" class="title">Hiragana - ひらがな</div>
@@ -48,5 +54,19 @@ const props = defineProps(['cards', 'section'])
 .title {
   font-size: 30px;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .p-pratice-box {
+    width: 80%;
+    background-color: var(--custom-background-2);
+    border-radius: 8px;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 </style>
