@@ -9,7 +9,6 @@ let praticeSection = ref(0)
 praticeMode.value = false
 praticeSection.value = undefined
 watch(praticeSection, (newValue, oldValue) => {
-  console.log(newValue, oldValue)
   const user = localStorageConfig()
   const hiragana = localStorage.getItem('hiragana')
   const katakana = localStorage.getItem('katakana')

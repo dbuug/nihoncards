@@ -5,16 +5,11 @@
     <div class="about-box">
       <div class="title">Sobre o Projeto</div>
       <div class="body">
-        <div>
-          Quando estava aprendendo o básico do idimoma japonês, encontava muita dificuldade de me
-          adapatar a ferramentas como o Anki, me sentia limitado e preso aos moldes da plataforma. E
-          como um bom desenvolvedor, criei minha própia plataforma para praticar.
-        </div>
+        <div>Plataforma criada para iniciantes no aprendizado de japonês.</div>
         <br />
         <div>
-          Todo seu progresso e desenpenho é salvo no seu navegador. Logo, sempre use o mesmo
-          navegador e tome cuidado ao limpar o cache do seu navegador, pois todo o progresso será
-          perdido.
+          Todo seu progresso é salvo no seu navegador. Logo, sempre use o mesmo navegador e tome
+          cuidado ao limpar o cache, pois todo o progresso será perdido.
         </div>
         <br />
         <div>
@@ -27,7 +22,12 @@
       </div>
       <div class="contacts">
         Contato: <br />
-        <Button label="Discord" icon="pi pi-discord" size="small" />
+        <Button
+          label="Discord"
+          onclick="window.open('https://discord.gg/arKvMu4Z')"
+          icon="pi pi-discord"
+          size="small"
+        />
       </div>
     </div>
   </div>
@@ -40,7 +40,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.2;
 }
 .about-box {
   color: white;
