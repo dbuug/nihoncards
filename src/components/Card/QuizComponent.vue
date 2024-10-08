@@ -162,7 +162,7 @@ const finish = () => {
 <style scoped>
 .card {
   width: 40%;
-  background-color: var(--custom-background-2);
+  background-color: #e59ab6;
   border-radius: 8px;
   color: white;
   padding: 20px;
@@ -188,7 +188,7 @@ const finish = () => {
   width: 50%;
   height: 50px;
   margin: 0 auto;
-  --p-skeleton-animation-background: var(--custom-background-2);
+  --p-skeleton-animation-background: #e59ab6;
 }
 .hints:hover {
   cursor: pointer;
@@ -213,7 +213,7 @@ const finish = () => {
 @media only screen and (max-width: 600px) {
   .card {
     width: 80%;
-    background-color: var(--custom-background-2);
+    background-color: #e59ab6;
     border-radius: 8px;
     color: white;
     padding: 20px;

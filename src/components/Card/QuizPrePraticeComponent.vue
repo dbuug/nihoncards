@@ -37,7 +37,7 @@ const n5Check = ref()
 <style scoped>
 .p-pratice-box {
   width: 80%;
-  background-color: var(--custom-background-2);
+  background-color: #e59ab6;
   border-radius: 8px;
   color: white;
   padding: 20px;

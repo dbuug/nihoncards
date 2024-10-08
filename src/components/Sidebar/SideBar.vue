@@ -18,7 +18,7 @@
       class="w-full md:w-60"
       style="
         height: 100%;
-        background-color: var(--custom-background-2);
+        background-color: #e59ab6;
         color: white;
         border: none;
         border-radius: 10px;
@@ -61,7 +61,7 @@
     width: 100%;
     text-align: center;
     height: 120px;
-    background-color: var(--custom-background-2);
+    background-color: #e59ab6;
     display: flex;
     flex-direction: column;
   }

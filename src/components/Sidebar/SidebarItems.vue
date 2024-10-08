@@ -25,7 +25,7 @@ const props = defineProps(['icon', 'character', 'text', 'badge', 'toEmit'])
 
 .sidebar-items:hover {
   cursor: pointer;
-  background-color: var(--custom-background-4);
+  background-color: #7d9b9f;
   border-radius: 4px;
 }
 .sidebar-item-size {

@@ -37,7 +37,6 @@
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 
   --custom-background-1: #ffc0cb;
-  --custom-background-2: #e59ab6;
   --custom-background-3: #8abf69;
   --custom-background-4: #7d9b9f;
   --custom-background-5: #b38b84;
@@ -83,8 +82,8 @@
   :root {
     --color-background: var(--custom-background-1);
 
-    --color-border: var(--custom-background-3);
-    --color-border-hover: var(--custom-background-3);
+    --color-border: #8abf69;
+    --color-border-hover: #8abf69;
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
