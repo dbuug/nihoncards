@@ -52,10 +52,6 @@ const nextCard = () => {
   fliped.value = false
   hint.value = false
 }
-
-const finish = () => {
-  emit('updatePratice', false)
-}
 </script>
 <template>
   <div :class="{ card: true }">
@@ -86,7 +82,6 @@ const finish = () => {
     <div v-else class="fn-box">
       <div class="fn-title">Parabéns!</div>
       <div class="fn-body">Você concluiu com sucesso a prática de hoje!</div>
-      <div><Button label="Finalizar Sessão" style="margin-top: 20px" @click="finish()" /></div>
     </div>
   </div>
   <div class="options" v-if="praticeType === 'spaced' && cardsLength !== lenCards">
@@ -97,6 +92,7 @@ const finish = () => {
   <div style="margin-bottom: 20px" v-if="praticeType === 'full'">
     <Button label="Próximo" @click="nextCard()" />
   </div>
+  <Button label="Finalizar sessão" @click="$emit('updatePratice')" />
 </template>
 <style scoped>
 .card {

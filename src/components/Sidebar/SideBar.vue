@@ -31,13 +31,14 @@
         <span class="text-primary font-bold">{{ item.label }}</span>
       </template>
       <template #item="{ item }">
-        <!-- TODO: componente pro menu -->
         <SidebarItems
           :icon="item.icon"
           :character="item.character"
           :text="item.text"
           :badge="item.badge"
           :toEmit="item.toEmit"
+          :sectionName="props.sectionName"
+          :praticeSection="props.praticeSection"
           @update-section="(s) => $emit('updateSection', s)"
         />
       </template>
@@ -85,6 +86,8 @@ import { ref } from 'vue'
 import SidebarHeader from './SidebarHeader.vue'
 import SidebarItems from './SidebarItems.vue'
 
+const props = defineProps(['praticeSection', 'sectionName'])
+
 const items = ref([
   {
     items: [
@@ -113,22 +116,6 @@ const items = ref([
         character: '問',
         toEmit: 'quiz'
       }
-      // {
-      //   text: 'Exportar',
-      //   icon: 'pi pi-file-export'
-      // },
-      // {
-      //   text: 'Importar',
-      //   icon: 'pi pi-file-import'
-      // },
-      // {
-      //   text: 'Contato',
-      //   icon: 'pi pi-discord'
-      // },
-      // {
-      //   text: 'Informações',
-      //   icon: 'pi pi-info-circle'
-      // }
     ]
   }
 ])

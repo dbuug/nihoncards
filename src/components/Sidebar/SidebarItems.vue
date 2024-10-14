@@ -1,5 +1,11 @@
 <template>
-  <div class="sidebar-items" @click="$emit('updateSection', props.toEmit)">
+  <div
+    class="sidebar-items"
+    @click="$emit('updateSection', props.toEmit)"
+    :style="{
+      'background-color': props.praticeSection === props.toEmit ? '#7d9b9f' : '#e59ab6'
+    }"
+  >
     <div>
       <p v-if="props.icon">
         <span class="sidebar-item-size" :class="props.icon" />
@@ -13,7 +19,8 @@
   </div>
 </template>
 <script setup>
-const props = defineProps(['icon', 'character', 'text', 'badge', 'toEmit'])
+import { defineProps } from 'vue'
+const props = defineProps(['icon', 'character', 'text', 'badge', 'toEmit', 'praticeSection'])
 </script>
 <style scoped>
 .sidebar-items {

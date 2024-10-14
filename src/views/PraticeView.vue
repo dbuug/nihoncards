@@ -67,11 +67,6 @@ const toUpdatePratice = () => {
       :section="props.praticeSection"
       @update-pratice="toUpdatePratice"
     />
-    <Button
-      v-if="props.praticeMode === true"
-      @click="$emit('updatePratice', false)"
-      label="Cancelar Sessão"
-    />
   </div>
   <div v-if="props.praticeSection === 'katakana'" class="pratice-box">
     <PrePraticeComponent
@@ -86,11 +81,6 @@ const toUpdatePratice = () => {
       :cards="getKatakanaCards()"
       :section="props.praticeSection"
       @update-pratice="toUpdatePratice"
-    />
-    <Button
-      v-if="props.praticeMode === true"
-      @click="$emit('updatePratice', false)"
-      label="Cancelar Sessão"
     />
   </div>
   <div v-if="props.praticeSection === 'n5'" class="pratice-box">
@@ -108,11 +98,6 @@ const toUpdatePratice = () => {
       :section="props.praticeSection"
       @update-pratice="toUpdatePratice"
     />
-    <Button
-      v-if="props.praticeMode === true"
-      @click="$emit('updatePratice', false)"
-      label="Cancelar Sessão"
-    />
   </div>
   <div v-if="props.praticeSection === 'quiz'" class="pratice-box">
     <QuizPrePraticeComponent
@@ -125,11 +110,6 @@ const toUpdatePratice = () => {
       v-if="props.praticeMode === true"
       :cards="quizCards"
       @update-pratice="toUpdatePratice"
-    />
-    <Button
-      v-if="props.praticeMode === true"
-      @click="$emit('updatePratice', false)"
-      label="Cancelar Sessão"
     />
   </div>
 </template>

@@ -28,7 +28,11 @@ watch(praticeSection, (newValue, oldValue) => {
 
 <template>
   <div :class="{ 'app-non-pratice': !praticeMode, 'app-in-pratice': praticeMode }">
-    <SideBar v-if="praticeMode === false" @update-section="(b) => (praticeSection = b)" />
+    <SideBar
+      v-if="praticeMode === false"
+      :praticeSection="praticeSection"
+      @update-section="(b) => (praticeSection = b)"
+    />
     <PraticeView
       :praticeMode="praticeMode"
       :praticeSection="praticeSection"

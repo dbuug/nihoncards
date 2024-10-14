@@ -154,10 +154,11 @@ const finish = () => {
           </div>
         </div>
       </div>
-      <div><Button label="Finalizar Sessão" @click="finish()" /></div>
     </div>
   </div>
-  <div style="margin-bottom: 20px"></div>
+  <div style="margin-bottom: 20px">
+    <div><Button label="Finalizar Sessão" @click="finish()" /></div>
+  </div>
 </template>
 <style scoped>
 .card {
