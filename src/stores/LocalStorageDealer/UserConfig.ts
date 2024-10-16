@@ -32,7 +32,6 @@ export const localStorageConfig = defineStore('localStorageConfig', {
 
     actions: {
         setNextDay(alphabet: string, kana: kanas, type: string, time: number) {
-            // const calcTime = (864000000 * time)
             switch (alphabet) {
                 case 'hiragana':
                     // eslint-disable-next-line no-case-declarations
@@ -40,7 +39,7 @@ export const localStorageConfig = defineStore('localStorageConfig', {
                     hira.map((h: kanas) => {
                         if (h.letter === kana.letter) {
                             h.lastChoice = type
-                            h.nextDate = new Date().getTime() + (864000000 * time)
+                            h.nextDate = new Date().getTime() + (86400 * time)
                         }
                         return h
                     })
@@ -52,7 +51,7 @@ export const localStorageConfig = defineStore('localStorageConfig', {
                     kt.map((h: kanas) => {
                         if (h.letter === kana.letter) {
                             h.lastChoice = type
-                            h.nextDate = new Date().getTime() + (864000000 * time)
+                            h.nextDate = new Date().getTime() + (86400 * time)
                         }
                         return h
                     })
@@ -64,7 +63,7 @@ export const localStorageConfig = defineStore('localStorageConfig', {
                     n5.map((h: kanjis) => {
                         if (h.letter == kana.letter) {
                             h.lastChoice = type
-                            h.nextDate = new Date().getTime() + (864000000 * time)
+                            h.nextDate = new Date().getTime() + (86400 * time)
                         }
                         return h
                     })
