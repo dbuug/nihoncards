@@ -89,7 +89,7 @@ const nextCard = () => {
     <Button label="Médio" @click="medium(kanas[lenCards])" />
     <Button label="Difícil" @click="hard(kanas[lenCards])" />
   </div>
-  <div style="margin-bottom: 20px" v-if="praticeType === 'full'">
+  <div style="margin-bottom: 20px" v-if="praticeType === 'full' && cardsLength !== lenCards">
     <Button label="Próximo" @click="nextCard()" />
   </div>
   <Button label="Finalizar sessão" @click="$emit('updatePratice')" />
