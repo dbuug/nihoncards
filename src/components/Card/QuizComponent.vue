@@ -90,11 +90,21 @@ const nextCard = (kana) => {
 const finish = () => {
   emit('updatePratice', false)
 }
+
+const getPercentil = () => {
+  let rightResponses = 0
+  for (const [i, kana] of kanas.value.entries()) {
+    const isRight =
+      kana.options.filter((op) => op.original === true)[0].translate === responses.value[i]
+    if (isRight) rightResponses++
+  }
+  return rightResponses
+}
 </script>
 <template>
   <div :class="{ card: true }">
     <div v-if="!showFinal">
-      <div class="top-bar">{{ lenCards }}/{{ kanas.length }}</div>
+      <div class="top-bar">{{ lenCards + 1 }}/{{ kanas.length }}</div>
       <div class="kana">{{ kanas[lenCards].kana }}</div>
       <div class="hints" @click="hint = !hint">
         <div>Selecione a resposta correta:</div>
@@ -129,7 +139,7 @@ const finish = () => {
     <div v-else>
       <div class="responses">
         <div class="response-table">
-          <div>Caracter</div>
+          <div>Caractere</div>
           <div>Significado</div>
           <div>Resposta</div>
         </div>
@@ -158,6 +168,15 @@ const finish = () => {
   </div>
   <div style="margin-bottom: 20px">
     <div><Button label="Finalizar Sessão" @click="finish()" /></div>
+  </div>
+  <div class="percent-response" v-if="showFinal">
+    <div class="percent-h">Porcentagem de acerto: {{ (getPercentil() * 100) / 10 }}%</div>
+    <div v-if="(getPercentil() * 100) / 10 >= 60" class="succ">
+      Parabéns você conseguiu {{ (getPercentil() * 100) / 10 }}% de acerto! Continue treinando!
+    </div>
+    <div v-else class="fall">
+      Infelizmente você ficou abaixo da média, revise o conteúdo e tente novamente!
+    </div>
   </div>
 </template>
 <style scoped>
@@ -209,6 +228,19 @@ const finish = () => {
 .response-table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.succ {
+  color: green;
+  font-size: 21px;
+}
+.fall {
+  color: red;
+  font-size: 21px;
+}
+.percent-h {
+  text-align: center;
+  color: white;
+  font-size: 22px;
 }
 
 @media only screen and (max-width: 600px) {
