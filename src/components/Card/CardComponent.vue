@@ -84,6 +84,7 @@ const nextCard = () => {
       <div class="fn-body">Você concluiu com sucesso a prática de hoje!</div>
     </div>
   </div>
+  <p style="color: white; margin-bottom: 20px">Seleciona uma opção abaixo.</p>
   <div class="options" v-if="praticeType === 'spaced' && cardsLength !== lenCards">
     <Button label="Fácil" @click="easy(kanas[lenCards])" />
     <Button label="Médio" @click="medium(kanas[lenCards])" />

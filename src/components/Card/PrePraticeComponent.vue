@@ -19,7 +19,7 @@ const props = defineProps(['cards', 'section'])
     </div>
     <div class="p-inside-box">
       <div class="title">Repetição espaçada</div>
-      <div class="subtitle">Voce possui {{ props.cards.length }} cards ao total para praticar</div>
+      <div class="subtitle">Você possui {{ props.cards.length }} cards ao total para praticar</div>
       <Button
         :disabled="props.cards.length === 0"
         label="Prática Espaçada"
